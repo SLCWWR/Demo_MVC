@@ -1,0 +1,46 @@
+﻿cite {
+    margin-left: 20px;
+}
+
+#menu .layui-nav-child a {
+    height: 40px;
+    line-height: 40px;
+    padding-left: 45px;
+    padding-right: 30px;
+}
+
+
+.styletable {
+    width: 800px;
+    border-collapse: collapse;
+    border: 1px solid #000000;
+}
+
+.tdOne {
+    width: 100px;
+    border: 1px solid #000000;
+    text-align: center;
+    padding: 3px 1px 3px 1px;
+    font-size: 16px;
+}
+
+.tdTwo {
+    width:160px;
+    border: 1px solid #000000;
+    text-align: left;
+    padding: 3px 3px 3px 3px;
+}
+
+.tdThree {
+    width: 690px;
+    border: 1px solid #000000;
+    text-align: left;
+    padding: 3px 3px 3px 3px;
+}
+
+.div-solid{width:800px;height:400px;border:1px solid #000000;margin:0 auto} 
+.div-solid-float{width:158px;height:198px;border:1px solid #000000;float:left}
+.p-content{line-height:100px;margin:0 auto}
+.p-date{line-height:110px;margin:0 auto}
+.div-button{width:300px;margin:0 auto}
+p {height: 45px;display: block;line-height: 45px;text-align: center;}

@@ -1,0 +1,81 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <title>微信后台管理系统</title>
+    <link rel="shortcut icon" href="../Images/logo_short.png" type="image/x-icon" />
+    <link rel="stylesheet" href="layuiadmin/layui/css/layui.css" />
+    <style>
+        .layui-upload-img {
+            width: 92px;
+            height: 92px;
+            margin: 0 10px 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="layui-layout layui-layout-admin" style="padding:50px">
+        <form class="layui-form layui-form-pane" action="" lay-filter="example">
+            <fieldset class="layui-elem-field">
+                <legend>应用信息</legend>
+                <div class="layui-field-box">
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">应用名称：</label>
+                        <div class="layui-input-inline">
+                            <input type="text" name="name" id="name" lay-verify="required" autocomplete="off" placeholder="请应用名称" class="layui-input" />
+                        </div>
+                    </div>
+                    <div class="layui-form-item layui-form-text">
+                        <label class="layui-form-label">应用链接：</label>
+                        <div class="layui-input-block">
+                            <textarea placeholder="请输入应用链接" id="link" name="link" class="layui-textarea" lay-verify="required"></textarea>
+                        </div>
+                    </div>
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">应用说明：</label>
+                        <div class="layui-input-block">
+                            <input type="text" name="remark" id="remark" placeholder="请输入应用说明" class="layui-input" />
+                        </div>
+                    </div>
+                    <div class="layui-form-item">
+                        <div class="layui-inline">
+                            <label class="layui-form-label">排序：</label>
+                            <div class="layui-input-inline">
+                                <input type="number" name="orderNum" id="orderNum" class="layui-input" value="1" />
+                            </div>
+                        </div>
+                        <div class="layui-inline">
+                            <label class="layui-form-label">是否启用</label>
+                            <div class="layui-input-block">
+                                <input type="checkbox" checked="" id="open" name="open" lay-skin="switch" lay-filter="switchTest" lay-text="是|否" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="layui-upload">
+                        <button type="button" class="layui-btn" id="test1">上传图标</button>
+                        <input class="layui-upload-file" type="file" accept="undefined" />
+                        <div class="layui-upload-list">
+                            <img class="layui-upload-img" id="icon" />
+                            <input class="layui-hide" type="text" name="iconImg" id="iconImage" />
+                            <p id="demoText"></p>
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+            <div class="layui-form-item">
+                <div class="layui-input-block">
+                    <a class="layui-btn" lay-submit="" lay-filter="submit">确认</a>
+                    <a class="layui-btn layui-btn-primary" lay-submit="" lay-filter="demo1" id="back">返回</a>
+                </div>
+            </div>
+        </form>
+    </div>
+    <script src="Js/sweetalert.js"></script>
+    <script src="layuiadmin/layui/layui.js"></script>
+    <script src="JS/QueryString.js"></script>
+    <script>document.write('<script src="JS/appinfo.js?t=' + new Date().getTime() + '"><\/script>')</script>
+</body>
+</html>

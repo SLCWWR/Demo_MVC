@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>管理员登陆</title>
+    <link href="../CSS/login.css" rel="stylesheet" />
+    <link href="../CSS/style.css" rel="stylesheet" />
+    <link href="layuiadmin/layui/css/layui.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="layadmin-user-login layadmin-user-display-show" id="LAY-user-login">
+        <div class="layadmin-user-login-main">
+            <div class="layadmin-user-login-box layadmin-user-login-header">
+                <img src="../Images/logo-long2.png" width="280" height="50" />
+                <h2>Demo系统</h2>
+            </div>
+            <form runat="server" class="layui-form" lay-filter="Access-UserSignln">
+                <div class="layadmin-user-login-box layadmin-user-login-body layui-form">
+                    <div class="layui-form-item">
+                        <label class="layadmin-user-login-icon layui-icon layui-icon-username"
+                               for="LAY-user-login-username">
+                        </label>
+                        <input type="text" runat="server" name="longin_username" id="longin_username" lay-verify="required"
+                               placeholder="用户名" class="layui-input" />
+                    </div>
+                    <div class="layui-form-item">
+                        <label class="layadmin-user-login-icon layui-icon layui-icon-password"
+                               for="LAY-user-login-password">
+                        </label>
+                        <input type="password" runat="server" name="longin_password" id="longin_password" lay-verify="required"
+                               placeholder="密码" class="layui-input" />
+                    </div>
+                    <div class="layui-form-item">
+                        <a ID="login" lay-filter="login" class="layui-btn  layui-btn-fluid layui-btn-normal layui-btn-radius" lay-submit>登录</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="layui-trans layadmin-user-login-footer">
+            <p>© 2019 <a>AIC智慧校园</a></p>
+        </div>
+    </div>
+    <script src="layuiadmin/layui/layui.js"></script>
+    <script>document.write('<script src="JS/login.js?t=' + new Date().getTime() + '"><\/script>')</script>
+</body>
+</html>
